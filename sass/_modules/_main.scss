@@ -1,0 +1,56 @@
+.main {
+  grid-area: main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__title {
+    width: 40%;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+
+    @media screen and (max-width: 375px) {
+      width: 90%;
+      font-size: 2.8rem;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.button {
+  border: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: $off-white;
+  background-color: $red;
+  padding: 15px 30px;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    background-color: $very-dark-blue;
+    cursor: pointer;
+  }
+}
