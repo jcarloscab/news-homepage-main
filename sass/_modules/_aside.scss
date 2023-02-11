@@ -3,6 +3,10 @@
   background-color: $very-dark-blue;
   padding: 5px 35px;
 
+  @media screen and (max-width: 375px) {
+    padding: 25px 35px;
+  }
+
   &__title {
     color: $orange;
     font-size: 2.5rem;
@@ -10,7 +14,7 @@
 
   &__separator {
     margin-top: 30px;
-    border-color: $Dark-grayish-blue
+    border-color: $Dark-grayish-blue;
   }
 }
 

@@ -75,6 +75,7 @@ a {
 @media screen and (max-width: 375px) {
   .main-menu__icon {
     display: block;
+    float: right;
   }
 }
 .main-menu__icon-closed {
@@ -164,7 +165,7 @@ a {
 }
 @media screen and (max-width: 375px) {
   .main__title {
-    width: 90%;
+    width: 100%;
     font-size: 2.8rem;
   }
 }
@@ -176,6 +177,14 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   height: 100%;
+}
+@media screen and (max-width: 375px) {
+  .main__content {
+    width: 100%;
+    justify-content: flex-start;
+    height: auto;
+    padding: 0;
+  }
 }
 .main__text {
   font-size: 1rem;
@@ -192,6 +201,11 @@ a {
   padding: 15px 30px;
   letter-spacing: 0.2rem;
 }
+@media screen and (max-width: 375px) {
+  .button {
+    margin-top: 20px;
+  }
+}
 .button:hover {
   background-color: hsl(240deg, 100%, 5%);
   cursor: pointer;
@@ -201,6 +215,11 @@ a {
   grid-area: aside;
   background-color: hsl(240deg, 100%, 5%);
   padding: 5px 35px;
+}
+@media screen and (max-width: 375px) {
+  .aside {
+    padding: 25px 35px;
+  }
 }
 .aside__title {
   color: hsl(35deg, 77%, 62%);
@@ -236,6 +255,12 @@ a {
   align-items: center;
   gap: 20px;
 }
+@media screen and (max-width: 375px) {
+  .submain {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 
 .new-article {
   width: 33%;
@@ -244,6 +269,11 @@ a {
   justify-content: space-between;
   overflow: hidden;
   gap: 20px;
+}
+@media screen and (max-width: 375px) {
+  .new-article {
+    width: 100%;
+  }
 }
 .new-article__img-container {
   width: 30%;
@@ -266,6 +296,11 @@ a {
   align-items: flex-start;
   padding: 0 10px;
 }
+@media screen and (max-width: 375px) {
+  .new-article__text {
+    padding: 0 0 0 10px;
+  }
+}
 .new-article__number {
   color: hsl(233deg, 8%, 79%);
   font-size: 2rem;
@@ -274,12 +309,22 @@ a {
   font-size: 1.2rem;
   font-weight: 800;
 }
+@media screen and (max-width: 375px) {
+  .new-article__title {
+    font-size: 1.1rem;
+  }
+}
 .new-article__title:hover {
   color: hsl(5deg, 85%, 63%);
 }
 .new-article__content {
   font-size: 0.98rem;
   line-height: 1.6rem;
+}
+@media screen and (max-width: 375px) {
+  .new-article__content {
+    font-size: 0.9rem;
+  }
 }
 
 .footer {
