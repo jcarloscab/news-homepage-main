@@ -9,10 +9,14 @@
 .main-menu {
   width: 40%;
 
+  @include media.tablet {
+    width: 60%;
+  }
+
   &__icon {
     display: none;
 
-    @media screen and (max-width: 375px) {
+    @include media.mobile {
       display: block;
       float: right;
     }
@@ -21,7 +25,7 @@
   &__icon-closed {
     display: none;
 
-    @media screen and (max-width: 375px) {
+    @include media.mobile {
       display: block;
       margin-bottom: 60px;
       align-self: flex-end;
@@ -29,7 +33,7 @@
   }
 
   &__items-container {
-    @media screen and (max-width: 375px) {
+    @include media.mobile {
       left: 0;
       top: 0;
       width: 100%;
@@ -49,7 +53,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: 375px) {
+    @include media.mobile {
       position: fixed;
       width: 55%;
       height: 100%;
@@ -69,7 +73,7 @@
   }
 
   &__item {
-    @media screen and (max-width: 375px) {
+    @include media.mobile {
       padding: 15px 0;
       display: block;
       width: 100%;

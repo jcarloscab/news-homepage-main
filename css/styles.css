@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Inter";
-  src: url(../../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  src: url(../../assets/fonts/Inter-VariableFont_slntwght.ttf);
 }
 @font-face {
   font-family: "Inter";
@@ -31,6 +31,7 @@ body {
 }
 
 .container {
+  width: 90%;
   max-width: 1200px;
   margin: auto;
   display: grid;
@@ -38,7 +39,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "header     header      header" "banner     banner      aside" "main       main        aside" "submain    submain     submain" "footer     footer      footer";
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "banner" "main" "aside" "submain" "footer";
@@ -68,6 +69,11 @@ a {
 
 .main-menu {
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .main-menu {
+    width: 60%;
+  }
 }
 .main-menu__icon {
   display: none;
@@ -150,11 +156,17 @@ a {
   align-items: center;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .main {
+    height: 200px;
+  }
+}
 @media screen and (max-width: 375px) {
   .main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    height: auto;
   }
 }
 .main__title {
@@ -162,6 +174,11 @@ a {
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 3.5rem;
+}
+@media screen and (max-width: 768px) {
+  .main__title {
+    font-size: 3.1rem;
+  }
 }
 @media screen and (max-width: 375px) {
   .main__title {
@@ -216,6 +233,11 @@ a {
   background-color: hsl(240deg, 100%, 5%);
   padding: 5px 35px;
 }
+@media screen and (max-width: 768px) {
+  .aside {
+    padding-block: 30px;
+  }
+}
 @media screen and (max-width: 375px) {
   .aside {
     padding: 25px 35px;
@@ -255,7 +277,7 @@ a {
   align-items: center;
   gap: 20px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .submain {
     flex-direction: column;
     justify-content: flex-start;
@@ -269,6 +291,11 @@ a {
   justify-content: space-between;
   overflow: hidden;
   gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .new-article {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 375px) {
   .new-article {

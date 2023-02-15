@@ -3,7 +3,11 @@
   background-color: $very-dark-blue;
   padding: 5px 35px;
 
-  @media screen and (max-width: 375px) {
+  @include media.tablet {
+    padding-block: 30px;
+  }
+
+  @include media.mobile {
     padding: 25px 35px;
   }
 

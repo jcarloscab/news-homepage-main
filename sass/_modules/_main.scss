@@ -5,10 +5,15 @@
   align-items: center;
   gap: 20px;
 
-  @media screen and (max-width: 375px) {
+  @include media.tablet {
+    height: 200px;
+  }
+
+  @include media.mobile {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    height: auto;
   }
 
   &__title {
@@ -17,7 +22,11 @@
     font-weight: 800;
     line-height: 3.5rem;
 
-    @media screen and (max-width: 375px) {
+    @include media.tablet {
+      font-size: 3.1rem;
+    }
+
+    @include media.mobile {
       width: 100%;
       font-size: 2.8rem;
     }
@@ -32,7 +41,7 @@
     align-items: flex-start;
     height: 100%;
 
-    @media screen and (max-width: 375px) {
+    @include media.mobile {
       width: 100%;
       justify-content: flex-start;
       height: auto;
@@ -56,7 +65,7 @@
   padding: 15px 30px;
   letter-spacing: 0.2rem;
 
-  @media screen and (max-width: 375px) {
+  @include media.mobile {
     margin-top: 20px;
   }
 
