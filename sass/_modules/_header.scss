@@ -13,12 +13,16 @@
     width: 60%;
   }
 
+  @include media.mobile {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   &__icon {
     display: none;
 
     @include media.mobile {
       display: block;
-      float: right;
     }
   }
 
@@ -32,18 +36,22 @@
     }
   }
 
-  &__items-container {
+  &__items-background {
     @include media.mobile {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
       left: 0;
       top: 0;
       width: 100%;
       height: 100vh;
-      display: none;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 1s;
 
       &--visible {
-        position: fixed;
+        z-index: 0;
+        opacity: 1;
         display: block;
-        background-color: rgba(0, 0, 0, 0.5);
       }
     }
   }
@@ -55,9 +63,10 @@
 
     @include media.mobile {
       position: fixed;
-      width: 55%;
+      width: 65%;
       height: 100%;
-      right: -55%;
+      right: 0;
+      transform: translateX(100%);
       transition: all 0.3s;
       top: 0;
       padding: 30px 20px;
@@ -67,7 +76,7 @@
       justify-content: flex-start;
 
       &--open {
-        right: 15%;
+        transform: translateX(0);
       }
     }
   }
