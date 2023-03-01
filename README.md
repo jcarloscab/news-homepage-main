@@ -25,7 +25,7 @@ Crear el homepage de noticias lo más parecido posible al original. Debe ser res
 
 ### Links
 
-- Solución URL: [Solución](https://www.frontendmentor.io/solutions/news-homepage-con-grid-AbgUC8G9j3)
+- Solución URL: [Solución](https://www.frontendmentor.io/solutions/news-homepage-con-grid-of5P8czktE)
 - Live Site URL: [Site](https://jcarloscab.github.io/news-homepage-main/)
 
 ## Mi Proceso
