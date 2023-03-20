@@ -16,7 +16,6 @@ Solución del challenge [News homepage challenge on Frontend Mentor](https://www
 
 ### El Desafío
 
-Your challenge is to build out this news website homepage and get it looking as close to the design as possible.
 Crear el homepage de noticias lo más parecido posible al original. Debe ser responsive y ver todos los estados de hover de los elementos interactivos. En el modo mobile debe aparecer el menú desde la derecha una vez se pulse el icono de menú.
 
 ### Screenshot
